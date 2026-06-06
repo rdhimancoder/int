@@ -1,0 +1,3283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="INT Computer Institute Sonipat - NIELIT & HKCL Affiliated Government Approved Computer Courses. ISO 9001:2015 Certified. Diplomas valid for Central & State Government Jobs.">
+    <meta name="keywords" content="computer institute sonipat, NIELIT O Level, DCA course, web development, tally GST, digital marketing, haryana computer institute">
+    <title>INT Computer Institute | NIELIT & HKCL Affiliated | Sonipat, Haryana</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6.5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- AOS Animate On Scroll -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* ============================================
+           CSS CUSTOM PROPERTIES & ROOT VARIABLES
+        ============================================ */
+        :root {
+            --primary: #1E3A8A;
+            --primary-dark: #0F172A;
+            --primary-light: #3B82F6;
+            --secondary: #06B6D4;
+            --accent-gold: #D97706;
+            --accent-gold-light: #FCD34D;
+            --bg-light: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --text-dark: #0F172A;
+            --text-body: #334155;
+            --text-muted: #64748B;
+            --text-light: #94A3B8;
+            --border-color: #E2E8F0;
+            --gradient-primary: linear-gradient(135deg, #0F172A 0%, #1E3A8A 50%, #1D4ED8 100%);
+            --gradient-secondary: linear-gradient(135deg, #06B6D4 0%, #0284C7 100%);
+            --gradient-gold: linear-gradient(135deg, #D97706 0%, #F59E0B 100%);
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.10), 0 2px 6px rgba(0,0,0,0.07);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.08);
+            --shadow-xl: 0 20px 60px rgba(0,0,0,0.15), 0 8px 20px rgba(0,0,0,0.10);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* ============================================
+           GLOBAL RESET & BASE STYLES
+        ============================================ */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; font-size: 16px; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-body);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        a { text-decoration: none; transition: var(--transition); }
+        img { max-width: 100%; height: auto; }
+
+        .section-padding { padding: 90px 0; }
+        .section-padding-sm { padding: 60px 0; }
+
+        /* ============================================
+           UTILITY CLASSES
+        ============================================ */
+        .text-primary-custom { color: var(--primary) !important; }
+        .text-secondary-custom { color: var(--secondary) !important; }
+        .text-gold { color: var(--accent-gold) !important; }
+        .bg-primary-custom { background: var(--gradient-primary) !important; }
+        .bg-secondary-custom { background: var(--secondary) !important; }
+
+        .badge-govt {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: linear-gradient(135deg, rgba(6,182,212,0.12) 0%, rgba(30,58,138,0.08) 100%);
+            color: var(--primary);
+            border: 1px solid rgba(30,58,138,0.20);
+            padding: 5px 14px;
+            border-radius: 50px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: 0.3px;
+        }
+
+        .badge-gold {
+            background: var(--gradient-gold);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        .section-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--secondary);
+            margin-bottom: 12px;
+            display: block;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .section-title {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 700;
+            color: var(--text-dark);
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            max-width: 600px;
+        }
+
+        .divider-line {
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-secondary);
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        /* ============================================
+           BUTTONS
+        ============================================ */
+        .btn-primary-custom {
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.92rem;
+            letter-spacing: 0.3px;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(30,58,138,0.30);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-primary-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(30,58,138,0.40);
+            color: white;
+            background: linear-gradient(135deg, #1E3A8A 0%, #1D4ED8 100%);
+        }
+
+        .btn-secondary-custom {
+            background: var(--gradient-secondary);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.92rem;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(6,182,212,0.30);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-secondary-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(6,182,212,0.40);
+            color: white;
+        }
+
+        .btn-gold-custom {
+            background: var(--gradient-gold);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: var(--radius-md);
+            font-weight: 700;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.92rem;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(217,119,6,0.35);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-gold-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(217,119,6,0.45);
+            color: white;
+        }
+
+        .btn-outline-white {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255,255,255,0.5);
+            padding: 11px 26px;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.92rem;
+            transition: var(--transition);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-outline-white:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: white;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* ============================================
+           TOP HEADER / TICKER BAR
+        ============================================ */
+        #top-header {
+            background: var(--primary-dark);
+            color: rgba(255,255,255,0.85);
+            font-size: 0.82rem;
+            font-weight: 500;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            z-index: 1050;
+            position: relative;
+        }
+
+        .ticker-wrapper {
+            overflow: hidden;
+            flex: 1;
+        }
+
+        .ticker-track {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            animation: ticker-scroll 30s linear infinite;
+            white-space: nowrap;
+        }
+
+        .ticker-track:hover { animation-play-state: paused; }
+
+        @keyframes ticker-scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .ticker-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        .ticker-item i { color: var(--accent-gold); font-size: 0.75rem; }
+        .ticker-highlight { color: var(--accent-gold-light); font-weight: 700; }
+
+        .header-contact-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-shrink: 0;
+        }
+
+        .header-contact-info a {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .header-contact-info a:hover { color: var(--secondary); }
+        .header-contact-info i { color: var(--secondary); font-size: 0.75rem; }
+
+        /* ============================================
+           NAVIGATION
+        ============================================ */
+        #main-navbar {
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px 0;
+            transition: var(--transition);
+            z-index: 1040;
+        }
+
+        #main-navbar.scrolled {
+            padding: 8px 0;
+            box-shadow: var(--shadow-md);
+        }
+
+        .navbar-brand-custom {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-logo-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--gradient-primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 800;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(30,58,138,0.25);
+        }
+
+        .brand-text-wrap .brand-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--primary);
+            line-height: 1.1;
+            display: block;
+        }
+
+        .brand-text-wrap .brand-tagline {
+            font-size: 0.68rem;
+            color: var(--text-muted);
+            display: block;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+
+        .nav-affiliate-badge {
+            background: linear-gradient(135deg, rgba(6,182,212,0.1) 0%, rgba(30,58,138,0.08) 100%);
+            border: 1px solid rgba(6,182,212,0.25);
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            font-family: 'Space Grotesk', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nav-affiliate-badge i { color: var(--secondary); font-size: 0.65rem; }
+
+        .navbar-nav .nav-link {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-body) !important;
+            padding: 8px 16px !important;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: var(--primary) !important;
+            background: rgba(30,58,138,0.06);
+        }
+
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after { width: 60%; }
+
+        .navbar-toggler {
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            padding: 6px 10px;
+        }
+        .navbar-toggler:focus { box-shadow: none; }
+
+        /* ============================================
+           HERO SECTION
+        ============================================ */
+        #hero {
+            background: var(--gradient-primary);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 100px;
+            padding-bottom: 60px;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -15%;
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(6,182,212,0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        #hero::after {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(29,78,216,0.20) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-grid-bg {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+        }
+
+        .hero-content { position: relative; z-index: 2; }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.10);
+            border: 1px solid rgba(255,255,255,0.18);
+            color: rgba(255,255,255,0.90);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-eyebrow i { color: var(--accent-gold-light); }
+
+        .hero-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: white;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-title .highlight-text {
+            background: linear-gradient(135deg, #06B6D4 0%, #67E8F9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.75);
+            line-height: 1.8;
+            margin-bottom: 32px;
+            max-width: 540px;
+        }
+
+        .hero-trust-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 36px;
+        }
+
+        .hero-trust-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.10);
+            border: 1px solid rgba(255,255,255,0.18);
+            color: rgba(255,255,255,0.90);
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            font-family: 'Space Grotesk', sans-serif;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-trust-badge i { color: var(--accent-gold-light); font-size: 0.75rem; }
+
+        .hero-cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 40px;
+        }
+
+        .hero-stats-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+            padding-top: 28px;
+            border-top: 1px solid rgba(255,255,255,0.12);
+        }
+
+        .hero-stat-item { text-align: left; }
+
+        .hero-stat-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: white;
+            line-height: 1;
+            display: block;
+        }
+
+        .hero-stat-label {
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.60);
+            font-weight: 500;
+            display: block;
+            margin-top: 3px;
+        }
+
+        /* Hero Lead Form */
+        .hero-form-card {
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.30);
+            border-radius: var(--radius-xl);
+            padding: 36px 32px;
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            z-index: 2;
+        }
+
+        .form-card-header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .form-card-header .form-icon {
+            width: 52px;
+            height: 52px;
+            background: var(--gradient-secondary);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            margin: 0 auto 14px;
+        }
+
+        .form-card-header h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .form-card-header p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .form-floating > .form-control,
+        .form-floating > .form-select {
+            border: 1.5px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            background: var(--bg-light);
+            transition: var(--transition);
+        }
+
+        .form-floating > .form-control:focus,
+        .form-floating > .form-select:focus {
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 3px rgba(6,182,212,0.12);
+            background: white;
+        }
+
+        .form-floating > label { font-size: 0.87rem; color: var(--text-muted); }
+
+        .form-submit-btn {
+            width: 100%;
+            padding: 14px;
+            font-size: 1rem;
+            border-radius: var(--radius-md);
+        }
+
+        .form-privacy-note {
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--text-light);
+            margin-top: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .form-privacy-note i { color: var(--secondary); }
+
+        /* ============================================
+           ACCREDITATION RIBBON
+        ============================================ */
+        #accreditation-ribbon {
+            background: white;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 28px 0;
+            overflow: hidden;
+        }
+
+        .ribbon-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--text-light);
+            white-space: nowrap;
+            font-family: 'Space Grotesk', sans-serif;
+            padding-right: 30px;
+            border-right: 1px solid var(--border-color);
+            margin-right: 30px;
+            flex-shrink: 0;
+        }
+
+        .accred-badges-row {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .accred-badge-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 20px;
+            border: 1.5px solid var(--border-color);
+            border-radius: var(--radius-md);
+            background: var(--bg-light);
+            transition: var(--transition);
+            flex-shrink: 0;
+        }
+
+        .accred-badge-card:hover {
+            border-color: var(--secondary);
+            box-shadow: 0 4px 16px rgba(6,182,212,0.12);
+            transform: translateY(-2px);
+        }
+
+        .accred-icon-wrap {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .accred-icon-wrap.blue { background: rgba(30,58,138,0.10); color: var(--primary); }
+        .accred-icon-wrap.cyan { background: rgba(6,182,212,0.10); color: var(--secondary); }
+        .accred-icon-wrap.gold { background: rgba(217,119,6,0.10); color: var(--accent-gold); }
+        .accred-icon-wrap.green { background: rgba(16,185,129,0.10); color: #10B981; }
+
+        .accred-text-wrap .accred-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--text-dark);
+            display: block;
+            line-height: 1.2;
+        }
+
+        .accred-text-wrap .accred-full {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            display: block;
+            line-height: 1.3;
+            margin-top: 2px;
+        }
+
+        .govt-verified-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, rgba(16,185,129,0.10) 0%, rgba(5,150,105,0.08) 100%);
+            border: 1px solid rgba(16,185,129,0.25);
+            color: #065F46;
+            padding: 10px 20px;
+            border-radius: var(--radius-md);
+            font-size: 0.82rem;
+            font-weight: 700;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .govt-verified-badge i { color: #10B981; }
+
+        /* ============================================
+           TRUST METRICS / COUNTERS
+        ============================================ */
+        #trust-metrics {
+            background: var(--gradient-primary);
+            position: relative;
+            overflow: hidden;
+            padding: 70px 0;
+        }
+
+        #trust-metrics::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+        }
+
+        .metric-card {
+            text-align: center;
+            padding: 32px 24px;
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: var(--radius-lg);
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+            position: relative;
+            z-index: 1;
+        }
+
+        .metric-card:hover {
+            background: rgba(255,255,255,0.12);
+            transform: translateY(-4px);
+        }
+
+        .metric-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            background: rgba(255,255,255,0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            margin: 0 auto 16px;
+        }
+
+        .metric-icon.cyan-icon { color: var(--secondary); }
+        .metric-icon.gold-icon { color: var(--accent-gold-light); }
+        .metric-icon.green-icon { color: #6EE7B7; }
+        .metric-icon.light-icon { color: #BAE6FD; }
+
+        .metric-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            color: white;
+            line-height: 1;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .metric-label {
+            font-size: 0.88rem;
+            color: rgba(255,255,255,0.65);
+            font-weight: 500;
+            display: block;
+        }
+
+        .metric-sublabel {
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.40);
+            display: block;
+            margin-top: 4px;
+        }
+
+        /* ============================================
+           COURSE CATALOG
+        ============================================ */
+        #course-catalog {
+            background: var(--bg-light);
+            padding: 90px 0;
+        }
+
+        .catalog-header { text-align: center; margin-bottom: 48px; }
+        .catalog-header .section-subtitle { margin: 0 auto; }
+
+        .filter-tabs-wrap {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .filter-tab-btn {
+            padding: 10px 22px;
+            border-radius: 50px;
+            border: 2px solid var(--border-color);
+            background: white;
+            color: var(--text-body);
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            font-size: 0.87rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .filter-tab-btn:hover {
+            border-color: var(--secondary);
+            color: var(--secondary);
+            background: rgba(6,182,212,0.05);
+        }
+
+        .filter-tab-btn.active {
+            background: var(--gradient-primary);
+            border-color: transparent;
+            color: white;
+            box-shadow: 0 4px 15px rgba(30,58,138,0.25);
+        }
+
+        .filter-tab-btn i { font-size: 0.8rem; }
+
+        .course-card {
+            background: white;
+            border: 1.5px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-card:hover {
+            border-color: var(--secondary);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-6px);
+        }
+
+        .course-card-top {
+            padding: 24px 24px 0;
+        }
+
+        .course-cat-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: 0.3px;
+            margin-bottom: 14px;
+        }
+
+        .cat-it { background: rgba(6,182,212,0.12); color: #0E7490; }
+        .cat-accounting { background: rgba(16,185,129,0.12); color: #065F46; }
+        .cat-govt { background: rgba(30,58,138,0.12); color: var(--primary); }
+        .cat-creative { background: rgba(217,119,6,0.12); color: #92400E; }
+
+        .course-icon-wrap {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            margin-bottom: 14px;
+        }
+
+        .icon-it { background: rgba(6,182,212,0.10); color: var(--secondary); }
+        .icon-accounting { background: rgba(16,185,129,0.10); color: #10B981; }
+        .icon-govt { background: rgba(30,58,138,0.10); color: var(--primary); }
+        .icon-creative { background: rgba(217,119,6,0.10); color: var(--accent-gold); }
+
+        .course-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 6px;
+            line-height: 1.3;
+        }
+
+        .course-desc {
+            font-size: 0.83rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .course-meta-row {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .course-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .course-meta-item i { font-size: 0.72rem; color: var(--secondary); }
+
+        .course-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 16px;
+        }
+
+        .course-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 0.82rem;
+            color: var(--text-body);
+            margin-bottom: 7px;
+            line-height: 1.5;
+        }
+
+        .course-features li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: #10B981;
+            font-size: 0.7rem;
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+
+        .course-card-bottom {
+            padding: 16px 24px 24px;
+            margin-top: auto;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .price-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .price-tag {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .price-label {
+            font-size: 0.7rem;
+            color: var(--text-light);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .price-amount {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        .price-period {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+        }
+
+        .course-enroll-btn {
+            padding: 9px 18px;
+            font-size: 0.82rem;
+        }
+
+        /* Courses Grid */
+        #courses-grid .row { transition: var(--transition); }
+        .course-item { display: none; }
+        .course-item.visible { display: flex; }
+
+        /* ============================================
+           FACILITIES SECTION
+        ============================================ */
+        #facilities {
+            background: white;
+            padding: 90px 0;
+        }
+
+        .facilities-header { text-align: center; margin-bottom: 56px; }
+
+        .facility-card {
+            padding: 32px 28px;
+            border: 1.5px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            background: var(--bg-light);
+            transition: var(--transition);
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .facility-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-secondary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: var(--transition);
+        }
+
+        .facility-card:hover {
+            border-color: var(--secondary);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-6px);
+        }
+
+        .facility-card:hover::before { transform: scaleX(1); }
+
+        .facility-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .fac-blue { background: rgba(30,58,138,0.10); color: var(--primary); }
+        .fac-cyan { background: rgba(6,182,212,0.10); color: var(--secondary); }
+        .fac-gold { background: rgba(217,119,6,0.10); color: var(--accent-gold); }
+        .fac-green { background: rgba(16,185,129,0.10); color: #10B981; }
+        .fac-purple { background: rgba(139,92,246,0.10); color: #8B5CF6; }
+        .fac-red { background: rgba(239,68,68,0.10); color: #EF4444; }
+
+        .facility-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .facility-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* ============================================
+           WHY CHOOSE US
+        ============================================ */
+        #why-choose {
+            background: var(--bg-light);
+            padding: 90px 0;
+        }
+
+        .why-visual-card {
+            background: var(--gradient-primary);
+            border-radius: var(--radius-xl);
+            padding: 48px 40px;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .why-visual-card::before {
+            content: '';
+            position: absolute;
+            top: -40%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(6,182,212,0.20) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .why-visual-content { position: relative; z-index: 1; }
+
+        .why-visual-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.20);
+            color: white;
+            padding: 8px 16px;
+            border-radius: var(--radius-sm);
+            font-size: 0.8rem;
+            font-weight: 600;
+            font-family: 'Space Grotesk', sans-serif;
+            margin-bottom: 24px;
+        }
+
+        .why-visual-title {
+            font-size: 2rem;
+            color: white;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .why-visual-text {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.70);
+            line-height: 1.8;
+            margin-bottom: 28px;
+        }
+
+        .why-mini-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-top: 28px;
+        }
+
+        .why-mini-stat {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            text-align: center;
+        }
+
+        .why-mini-stat .num {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+            display: block;
+        }
+
+        .why-mini-stat .lbl {
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.55);
+            display: block;
+            margin-top: 3px;
+        }
+
+        .why-reasons-list { list-style: none; padding: 0; margin: 0; }
+
+        .why-reason-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .why-reason-item:last-child { border-bottom: none; }
+
+        .reason-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .reason-text h5 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+
+        .reason-text p {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* ============================================
+           TESTIMONIALS
+        ============================================ */
+        #testimonials {
+            background: white;
+            padding: 90px 0;
+        }
+
+        .testimonials-header { text-align: center; margin-bottom: 52px; }
+
+        .testimonial-card {
+            background: var(--bg-light);
+            border: 1.5px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            height: 100%;
+            transition: var(--transition);
+        }
+
+        .testimonial-card:hover {
+            border-color: var(--secondary);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-4px);
+        }
+
+        .testimonial-stars { margin-bottom: 14px; }
+        .testimonial-stars i { color: var(--accent-gold); font-size: 0.9rem; margin-right: 2px; }
+
+        .testimonial-text {
+            font-size: 0.88rem;
+            color: var(--text-body);
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .author-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            flex-shrink: 0;
+            color: white;
+        }
+
+        .author-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 0.88rem;
+            color: var(--text-dark);
+            display: block;
+        }
+
+        .author-course {
+            font-size: 0.76rem;
+            color: var(--text-muted);
+            display: block;
+        }
+
+        /* ============================================
+           CONTACT CTA SECTION
+        ============================================ */
+        #contact-cta {
+            background: var(--gradient-primary);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #contact-cta::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        .cta-content { position: relative; z-index: 1; text-align: center; }
+
+        .cta-title {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            color: white;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+
+        .cta-subtitle {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.70);
+            margin-bottom: 36px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-contact-cards {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .cta-contact-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255,255,255,0.10);
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: var(--radius-md);
+            padding: 16px 24px;
+            color: white;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .cta-contact-card:hover {
+            background: rgba(255,255,255,0.18);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .cta-contact-card i {
+            font-size: 1.3rem;
+            color: var(--secondary);
+        }
+
+        .cta-contact-info .cta-contact-label {
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.55);
+            display: block;
+        }
+
+        .cta-contact-info .cta-contact-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.92rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        /* ============================================
+           FOOTER
+        ============================================ */
+        #footer {
+            background: var(--primary-dark);
+            color: rgba(255,255,255,0.70);
+            padding: 70px 0 0;
+        }
+
+        .footer-brand { margin-bottom: 20px; }
+
+        .footer-brand-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: white;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .footer-brand-tagline {
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.45);
+        }
+
+        .footer-about-text {
+            font-size: 0.85rem;
+            line-height: 1.8;
+            color: rgba(255,255,255,0.60);
+            margin-bottom: 20px;
+        }
+
+        .footer-accred-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .accred-chip {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            color: rgba(255,255,255,0.75);
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .footer-heading {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: var(--secondary);
+            border-radius: 2px;
+        }
+
+        .footer-links { list-style: none; padding: 0; margin: 0; }
+
+        .footer-links li { margin-bottom: 10px; }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.55);
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary);
+            padding-left: 4px;
+        }
+
+        .footer-links a i { font-size: 0.65rem; color: var(--secondary); }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .footer-contact-icon {
+            width: 32px;
+            height: 32px;
+            background: rgba(6,182,212,0.12);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+            font-size: 0.8rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .footer-contact-text {
+            font-size: 0.83rem;
+            color: rgba(255,255,255,0.60);
+            line-height: 1.5;
+        }
+
+        .footer-contact-text strong {
+            color: rgba(255,255,255,0.85);
+            font-weight: 600;
+        }
+
+        .footer-social-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .social-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.60);
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+
+        .social-btn:hover {
+            background: var(--secondary);
+            border-color: var(--secondary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .footer-divider {
+            border-color: rgba(255,255,255,0.08);
+            margin: 40px 0 0;
+        }
+
+        .footer-bottom {
+            padding: 20px 0;
+            background: rgba(0,0,0,0.20);
+        }
+
+        .footer-bottom-text {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.40);
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+
+        .footer-bottom-links a {
+            font-size: 0.78rem;
+            color: rgba(255,255,255,0.40);
+            transition: var(--transition);
+        }
+
+        .footer-bottom-links a:hover { color: var(--secondary); }
+
+        /* ============================================
+           SUCCESS ALERT
+        ============================================ */
+        .success-overlay {
+            display: none;
+            text-align: center;
+        }
+
+        .success-overlay.show { display: block; }
+
+        .success-icon-wrap {
+            width: 64px;
+            height: 64px;
+            background: rgba(16,185,129,0.12);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+        }
+
+        .success-icon-wrap i { color: #10B981; font-size: 1.8rem; }
+
+        /* ============================================
+           SCROLL TO TOP
+        ============================================ */
+        #scroll-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 0.9rem;
+            box-shadow: var(--shadow-md);
+            z-index: 999;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: var(--transition);
+        }
+
+        #scroll-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #scroll-top:hover { transform: translateY(-3px); }
+
+        /* ============================================
+           RESPONSIVE MEDIA QUERIES
+        ============================================ */
+        @media (max-width: 991.98px) {
+            .header-contact-info { display: none; }
+            .ribbon-label { display: none; }
+            .accred-badges-row { justify-content: center; }
+            .hero-stats-row { gap: 20px; }
+            .why-visual-card { margin-bottom: 32px; }
+            .footer-bottom-links { justify-content: center; margin-top: 8px; }
+            .footer-bottom-text { text-align: center; }
+        }
+
+        @media (max-width: 767.98px) {
+            .section-padding { padding: 60px 0; }
+            .hero-cta-group { gap: 10px; }
+            .filter-tabs-wrap { gap: 8px; }
+            .filter-tab-btn { padding: 8px 16px; font-size: 0.82rem; }
+            .hero-form-card { padding: 28px 20px; }
+            .why-mini-stats { grid-template-columns: 1fr 1fr; }
+            .cta-contact-cards { gap: 12px; }
+            .metric-card { margin-bottom: 16px; }
+        }
+
+        @media (max-width: 575.98px) {
+            .hero-title { font-size: 1.8rem; }
+            .hero-form-card { padding: 22px 16px; }
+            .btn-primary-custom, .btn-secondary-custom, .btn-gold-custom, .btn-outline-white {
+                padding: 11px 20px;
+                font-size: 0.87rem;
+            }
+            .accred-badge-card { padding: 10px 14px; }
+            .cta-contact-card { padding: 12px 18px; }
+        }
+
+        /* ============================================
+           AOS CUSTOM
+        ============================================ */
+        [data-aos] { pointer-events: none; }
+        [data-aos].aos-animate { pointer-events: auto; }
+
+        /* ============================================
+           GLASSMORPHISM CARD
+        ============================================ */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: var(--radius-lg);
+        }
+    </style>
+</head>
+<body>
+
+<!-- ============================================
+     TOP HEADER BAR
+============================================ -->
+<div id="top-header">
+    <div class="container-fluid px-4">
+        <div class="d-flex align-items-center justify-content-between">
+            <!-- Ticker -->
+            <div class="ticker-wrapper me-3" style="max-width: 60%;">
+                <div class="ticker-track">
+                    <span class="ticker-item"><i class="fas fa-star"></i> <span class="ticker-highlight">Free Demo Classes Available</span> — Book Your Seat Now!</span>
+                    <span class="ticker-item"><i class="fas fa-graduation-cap"></i> NIELIT O Level Registration Open — <span class="ticker-highlight">Limited Seats</span></span>
+                    <span class="ticker-item"><i class="fas fa-certificate"></i> ISO 9001:2015 Certified — Govt. Recognized Diplomas</span>
+                    <span class="ticker-item"><i class="fas fa-briefcase"></i> 100% Placement Assistance — <span class="ticker-highlight">Join Today</span></span>
+                    <span class="ticker-item"><i class="fas fa-clock"></i> Morning & Evening Batches Available</span>
+                    <!-- Duplicate for seamless loop -->
+                    <span class="ticker-item"><i class="fas fa-star"></i> <span class="ticker-highlight">Free Demo Classes Available</span> — Book Your Seat Now!</span>
+                    <span class="ticker-item"><i class="fas fa-graduation-cap"></i> NIELIT O Level Registration Open — <span class="ticker-highlight">Limited Seats</span></span>
+                    <span class="ticker-item"><i class="fas fa-certificate"></i> ISO 9001:2015 Certified — Govt. Recognized Diplomas</span>
+                    <span class="ticker-item"><i class="fas fa-briefcase"></i> 100% Placement Assistance — <span class="ticker-highlight">Join Today</span></span>
+                    <span class="ticker-item"><i class="fas fa-clock"></i> Morning & Evening Batches Available</span>
+                </div>
+            </div>
+            <!-- Contact Info -->
+            <div class="header-contact-info">
+                <a href="tel:+919354090002"><i class="fas fa-phone-alt"></i> +91 93540 90002</a>
+                <a href="mailto:info@intinstitute.com"><i class="fas fa-envelope"></i> info@intinstitute.com</a>
+                <span style="color: rgba(255,255,255,0.40); font-size:0.75rem;"><i class="fas fa-clock" style="color:var(--secondary)"></i> Mon-Sat: 9AM–7PM</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================
+     STICKY NAVIGATION
+============================================ -->
+<nav id="main-navbar" class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand navbar-brand-custom" href="#hero">
+            <div class="brand-logo-icon">INT</div>
+            <div class="brand-text-wrap">
+                <span class="brand-name">INT Computer Institute</span>
+                <span class="brand-tagline">Est. 2007 · Sonipat, Haryana</span>
+            </div>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#course-catalog">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#facilities">Facilities</a></li>
+                <li class="nav-item"><a class="nav-link" href="#why-choose">Why INT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact-cta">Contact</a></li>
+            </ul>
+            <div class="d-flex align-items-center gap-3">
+                <div class="nav-affiliate-badge d-none d-lg-flex">
+                    <i class="fas fa-shield-halved"></i>
+                    NIELIT &amp; HKCL Affiliated
+                </div>
+                <a href="#hero" class="btn-gold-custom" onclick="document.getElementById('demo-form').scrollIntoView({behavior:'smooth'}); return false;">
+                    <i class="fas fa-calendar-check"></i> Free Demo Class
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ============================================
+     HERO SECTION
+============================================ -->
+<section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="container hero-content">
+        <div class="row align-items-center g-5">
+            <!-- Left Content -->
+            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+                <div class="hero-eyebrow">
+                    <i class="fas fa-award"></i>
+                    Government Approved · Est. 2007 · Sonipat
+                </div>
+                <h1 class="hero-title">
+                    Government Approved<br>
+                    <span class="highlight-text">Computer Courses</span><br>
+                    in Sonipat
+                </h1>
+                <p class="hero-subtitle">
+                    ISO 9001:2015 Certified institute offering NIELIT & HKCL affiliated diplomas — fully valid for Central & State Government job applications. Practical-first education with 22+ years of expertise.
+                </p>
+                <div class="hero-trust-badges">
+                    <span class="hero-trust-badge"><i class="fas fa-certificate"></i> NIELIT Affiliated</span>
+                    <span class="hero-trust-badge"><i class="fas fa-shield-halved"></i> HKCL Certified</span>
+                    <span class="hero-trust-badge"><i class="fas fa-industry"></i> MSME Registered</span>
+                    <span class="hero-trust-badge"><i class="fas fa-check-circle"></i> ISO 9001:2015</span>
+                </div>
+                <div class="hero-cta-group">
+                    <a href="#hero" class="btn-gold-custom" onclick="document.getElementById('demo-form').scrollIntoView({behavior:'smooth'}); return false;">
+                        <i class="fas fa-rocket"></i> Book Free Demo
+                    </a>
+                    <a href="#course-catalog" class="btn-outline-white">
+                        <i class="fas fa-book-open"></i> Explore Courses
+                    </a>
+                </div>
+                <div class="hero-stats-row">
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-number">22+</span>
+                        <span class="hero-stat-label">Years Experience</span>
+                    </div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-number">500+</span>
+                        <span class="hero-stat-label">Skill Courses</span>
+                    </div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-number">10K+</span>
+                        <span class="hero-stat-label">Certified Students</span>
+                    </div>
+                    <div class="hero-stat-item">
+                        <span class="hero-stat-number">100%</span>
+                        <span class="hero-stat-label">Practical Labs</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Form -->
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+                <div class="hero-form-card" id="demo-form">
+                    <!-- Normal Form State -->
+                    <div id="form-content">
+                        <div class="form-card-header">
+                            <div class="form-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Book Your Free Demo Class Today</h3>
+                            <p>Fill in your details and our counselor will call you within 24 hours</p>
+                        </div>
+                        <form id="lead-form" novalidate>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="f-name" placeholder="Full Name" required>
+                                        <label for="f-name"><i class="fas fa-user me-2 text-muted"></i>Full Name *</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="f-phone" placeholder="Phone Number" required pattern="[6-9][0-9]{9}">
+                                        <label for="f-phone"><i class="fas fa-phone me-2 text-muted"></i>Phone Number *</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="f-email" placeholder="Email Address">
+                                        <label for="f-email"><i class="fas fa-envelope me-2 text-muted"></i>Email (Optional)</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="f-course" required>
+                                            <option value="" disabled selected>Select Course Interest</option>
+                                            <optgroup label="Government Diplomas">
+                                                <option value="nielit-o-level">NIELIT O Level Course</option>
+                                                <option value="dca">DCA – Diploma in Computer Applications</option>
+                                            </optgroup>
+                                            <optgroup label="IT & Development">
+                                                <option value="web-dev">Full-Stack Web Development</option>
+                                                <option value="python">Python Programming & Django</option>
+                                                <option value="java">Advanced Java</option>
+                                                <option value="data-science">Data Science & AI</option>
+                                                <option value="digital-marketing">Digital Marketing</option>
+                                            </optgroup>
+                                            <optgroup label="Accounting & Professional">
+                                                <option value="tally">Tally Prime with GST</option>
+                                                <option value="excel">Advanced Excel</option>
+                                            </optgroup>
+                                            <optgroup label="Creative Arts">
+                                                <option value="graphic-design">Graphic Designing</option>
+                                                <option value="fashion-design">Fashion Designing</option>
+                                            </optgroup>
+                                            <option value="other">Other / Not Sure Yet</option>
+                                        </select>
+                                        <label for="f-course"><i class="fas fa-book me-2 text-muted"></i>Course Interest *</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="f-batch">
+                                            <option value="" disabled selected>Preferred Batch Timing</option>
+                                            <option value="morning">Morning Batch (9AM – 12PM)</option>
+                                            <option value="afternoon">Afternoon Batch (12PM – 3PM)</option>
+                                            <option value="evening">Evening Batch (4PM – 7PM)</option>
+                                            <option value="weekend">Weekend Batch (Sat/Sun)</option>
+                                        </select>
+                                        <label for="f-batch"><i class="fas fa-clock me-2 text-muted"></i>Preferred Batch Timing</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-gold-custom form-submit-btn">
+                                        <i class="fas fa-calendar-check"></i>
+                                        Book My Free Demo Class
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="form-privacy-note">
+                            <i class="fas fa-lock"></i>
+                            Your information is 100% secure and never shared.
+                        </p>
+                    </div>
+
+                    <!-- Success State -->
+                    <div id="form-success" class="success-overlay">
+                        <div class="success-icon-wrap">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h4 style="color: var(--primary); font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; margin-bottom: 10px;">Booking Confirmed!</h4>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px;">Thank you! Our counselor will call you within 24 hours to schedule your free demo class at INT Computer Institute.</p>
+                        <div class="d-flex gap-3 justify-content-center flex-wrap">
+                            <a href="tel:+919354090002" class="btn-primary-custom" style="font-size: 0.85rem; padding: 10px 20px;">
+                                <i class="fas fa-phone"></i> Call Us Now
+                            </a>
+                            <button onclick="resetForm()" class="btn-outline-white" style="color: var(--primary); border-color: var(--border-color); font-size: 0.85rem; padding: 10px 20px;">
+                                <i class="fas fa-redo"></i> New Inquiry
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     ACCREDITATION RIBBON
+============================================ -->
+<section id="accreditation-ribbon">
+    <div class="container">
+        <div class="d-flex align-items-center flex-wrap gap-3" data-aos="fade-up" data-aos-duration="600">
+            <span class="ribbon-label">Accreditations & Certifications</span>
+            <div class="accred-badges-row">
+                <div class="accred-badge-card">
+                    <div class="accred-icon-wrap blue"><i class="fas fa-university"></i></div>
+                    <div class="accred-text-wrap">
+                        <span class="accred-name">NIELIT</span>
+                        <span class="accred-full">Govt. of India – MeitY</span>
+                    </div>
+                </div>
+                <div class="accred-badge-card">
+                    <div class="accred-icon-wrap cyan"><i class="fas fa-landmark"></i></div>
+                    <div class="accred-text-wrap">
+                        <span class="accred-name">HKCL</span>
+                        <span class="accred-full">Haryana Knowledge Corp.</span>
+                    </div>
+                </div>
+                <div class="accred-badge-card">
+                    <div class="accred-icon-wrap gold"><i class="fas fa-industry"></i></div>
+                    <div class="accred-text-wrap">
+                        <span class="accred-name">MSME</span>
+                        <span class="accred-full">Govt. Registered Enterprise</span>
+                    </div>
+                </div>
+                <div class="accred-badge-card">
+                    <div class="accred-icon-wrap green"><i class="fas fa-certificate"></i></div>
+                    <div class="accred-text-wrap">
+                        <span class="accred-name">ISO 9001:2015</span>
+                        <span class="accred-full">Quality Management Certified</span>
+                    </div>
+                </div>
+                <div class="govt-verified-badge">
+                    <i class="fas fa-shield-halved"></i>
+                    <span>Diplomas Valid for Govt. Jobs</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     TRUST METRICS / COUNTERS
+============================================ -->
+<section id="trust-metrics">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
+                <div class="metric-card">
+                    <div class="metric-icon"><i class="fas fa-calendar-days cyan-icon"></i></div>
+                    <span class="metric-number" data-target="22" data-suffix="+">0</span>
+                    <span class="metric-label">Years of Excellence</span>
+                    <span class="metric-sublabel">Established 2007</span>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="metric-card">
+                    <div class="metric-icon"><i class="fas fa-book-open-reader gold-icon"></i></div>
+                    <span class="metric-number" data-target="500" data-suffix="+">0</span>
+                    <span class="metric-label">Skill-Oriented Courses</span>
+                    <span class="metric-sublabel">Job-Ready Curriculum</span>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div class="metric-card">
+                    <div class="metric-icon"><i class="fas fa-user-graduate green-icon"></i></div>
+                    <span class="metric-number" data-target="10000" data-suffix="+">0</span>
+                    <span class="metric-label">Certified Students</span>
+                    <span class="metric-sublabel">Across Haryana & beyond</span>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                <div class="metric-card">
+                    <div class="metric-icon"><i class="fas fa-laptop-code light-icon"></i></div>
+                    <span class="metric-number" data-target="100" data-suffix="%">0</span>
+                    <span class="metric-label">Practical Lab Focus</span>
+                    <span class="metric-sublabel">Hands-on every session</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     COURSE CATALOG
+============================================ -->
+<section id="course-catalog">
+    <div class="container">
+        <div class="catalog-header" data-aos="fade-up" data-aos-duration="600">
+            <span class="section-label">Course Catalog</span>
+            <h2 class="section-title">Explore Our <span style="color: var(--secondary);">500+ Programs</span></h2>
+            <p class="section-subtitle">Government-approved, industry-aligned courses designed for practical skill-building and career advancement.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs-wrap" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+            <button class="filter-tab-btn active" data-filter="all">
+                <i class="fas fa-th"></i> All Courses
+            </button>
+            <button class="filter-tab-btn" data-filter="it">
+                <i class="fas fa-code"></i> IT & Development
+            </button>
+            <button class="filter-tab-btn" data-filter="accounting">
+                <i class="fas fa-calculator"></i> Accounting & Professional
+            </button>
+            <button class="filter-tab-btn" data-filter="govt">
+                <i class="fas fa-landmark"></i> Government Diplomas
+            </button>
+            <button class="filter-tab-btn" data-filter="creative">
+                <i class="fas fa-palette"></i> Creative Arts
+            </button>
+        </div>
+
+        <!-- Course Cards Grid -->
+        <div class="row g-4" id="courses-grid">
+
+            <!-- NIELIT O Level -->
+            <div class="col-md-6 col-lg-4 course-item visible" data-category="govt" data-aos="fade-up" data-aos-duration="600">
+                <div class="course-card">
+                    <div class="course-card-top">
+                        <span class="course-cat-badge cat-govt"><i class="fas fa-landmark"></i> Government Diploma</span>
+                        <div class="course-icon-wrap icon-govt"><i class="fas fa-award"></i></div>
+                        <h4 class="course-name">NIELIT O Level Foundation Course</h4>
+                        <p class="course-desc">The premier Govt. of India recognized computer foundation diploma. Valid for Central & State Government job applications across India.</p>
+                        <div class="course-meta-row">
+                            <span class="course-meta-item"><i class="fas fa-clock"></i> 1 Year</span>
+                            <span class="course-meta-item"><i class="fas fa-users"></i> Small Batch</span>
+                            <span class="course-meta-item"><i class="fas fa-certificate"></i> NIELIT Certified</span>
+                        </div>
+                        <ul class="course-features">
+                            <li>IT Tools & Business Systems</li>
+                            <li>Python / IoT Module Options</li>
+                            <li>Web Design & Publishing</li>
+                            <li>Cybersecurity Awareness</li>
+                            <li>Practical Project Assignments</li>
+                            <li>Valid for Govt. Job Applications</li>
+                        </ul>
+                    </div>
+                    <div class="course-card-bottom">
+                        <div class="price-row">
+                            <div class="price-tag">
+                                <span class="price-label">Course Fee</span>
+                                <span class="price-amount">₹12,000</span>
+                                <span class="price-period">/ full program</span>
+                            </div>
+                            <button class="btn-primary-custom course-enroll-btn" onclick="openEnquiry('NIELIT O Level')">
+                                <i class="fas fa-arrow-right"></i> Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DCA -->
+            <div class="col-md-6 col-lg-4 course-item visible" data-category="govt" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="course-card">
+                    <div class="course-card-top">
+                        <span class="course-cat-badge cat-govt"><i class="fas fa-landmark"></i> Government Diploma</span>
+                        <div class="course-icon-wrap icon-govt"><i class="fas fa-desktop"></i></div>
+                        <h4 class="course-name">DCA – Diploma in Computer Applications</h4>
+                        <p class="course-desc">A comprehensive diploma covering all essential computer skills. Widely accepted by government & private employers across Haryana.</p>
+                        <div class="course-meta-row">
+                            <span class="course-meta-item"><i class="fas fa-clock"></i> 6 Months</span>
+                            <span class="course-meta-item"><i class="fas fa-users"></i> Small Batch</span>
+                            <span class="course-meta-item"><i class="fas fa-certificate"></i> HKCL Affiliated</span>
+                        </div>
+                        <ul class="course-features">
+                            <li>MS Office Complete Suite</li>
+                            <li>Internet & Email Skills</li>
+                            <li>Tally Basics & Accounting</li>
+                            <li>Basic HTML & Web Usage</li>
+                            <li>Govt. Job Eligible Diploma</li>
+                            <li>Placement Assistance Included</li>
+                        </ul>
+                    </div>
+                    <div class="course-card-bottom">
+                        <div class="price-row">
+                            <div class="price-tag">
+                                <span class="price-label">Course Fee</span>
+                                <span class="price-amount">₹7,500</span>
+                                <span class="price-period">/ full program</span>
+                            </div>
+                            <button class="btn-primary-custom course-enroll-btn" onclick="openEnquiry('DCA Diploma')">
+                                <i class="fas fa-arrow-right"></i> Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full-Stack Web Dev -->
+            <div class="col-md-6 col-lg-4 course-item visible" data-category="it" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div class="course-card">
+                    <div class="course-card-top">
+                        <span class="course-cat-badge cat-it"><i class="fas fa-code"></i> IT & Development</span>
+                        <div class="course-icon-wrap icon-it"><i class="fas fa-laptop-code"></i></div>
+                        <h4 class="course-name">Full-Stack Web Development</h4>
+                        <p class="course-desc">Master front-end and back-end technologies. Build real-world projects with HTML, CSS, JavaScript, PHP & MySQL. Job-ready in 6 months.</p>
+                        <div class="course-meta-row">
+                            <span class="course-meta-item"><i class="fas fa-clock"></i> 6 Months</span>
+                            <span class="course-meta-item"><i class="fas fa-project-diagram"></i> Live Projects</span>
+                            <span class="course-meta-item"><i class="fas fa-briefcase"></i> Placement Help</span>
+                        </div>
+                        <ul class="course-features">
+                            <li>HTML5, CSS3 & Bootstrap</li>
+                            <li>JavaScript & jQuery</li>
+                            <li>PHP, MySQL & Laravel Track</li>
+                            <li>Git & Version Control</li>
+                            <li>Portfolio Project Included</li>
+                            <li>Freelancing Guidance</li>
+                        </ul>
+                    </div>
+                    <div class="course-card-bottom">
+                        <div class="price-row">
+                            <div class="price-tag">
+                                <span class="price-label">Course Fee</span>
+                                <span class="price-amount">₹18,000</span>
+                                <span class="price-period">/ full program</span>
+                            </div>
+                            <button class="btn-secondary-custom course-enroll-btn" onclick="openEnquiry('Full-Stack Web Development')">
+                                <i class="fas fa-arrow-right"></i> Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Science & AI -->
+            <div class="col-md-6 col-lg-4 course-item visible" data-category="it" data-aos="fade-up" data-aos-duration="600">
+                <div class="course-card">
+                    <div class="course-card-top">
+                        <span class="course-cat-badge cat-it"><i class="fas fa-brain"></i> IT & Development</span>
+                        <div class="course-icon-wrap icon-it"><i class="fas fa-brain"></i></div>
+                        <h4 class="course-name">Data Science & AI</h4>
+                        <p class="course-desc">Step into the future with data science, machine learning & AI fundamentals. Build analytical skills employers demand in 2025 and beyond.</p>
+                        <div class="course-meta-row">
+                            <span class="course-meta-item"><i class="fas fa-clock"></i> 4 Months</span>
+                            <span class="course-meta-item"><i class="fas fa-chart-bar"></i> Industry Tools</span>
+                            <span class="course-meta-item"><i class="fas fa-project-diagram"></i> Capstone Project</span>
+                        </div>
+                        <ul class="course-features">
+                            <li>Python for Data Science</li>
+                            <li>NumPy, Pandas & Matplotlib</li>
+                            <li>Machine Learning Basics</li>
+                            <li>AI for Business Insights</li>
+                            <li>Data Visualization Projects</li>
+                            <li>Industry Case Studies</li>
+                        </ul>
+                    </div>
+                    <div class="course-card-bottom">
+                        <div class="price-row">
+                            <div class="price-tag">
+                                <span class="price-label">Course Fee</span>
+                                <span class="price-amount">₹22,000</span>
+                                <span class="price-period">/ full program</span>
+                            </div>
+                            <button class="btn-secondary-custom course-enroll-btn" onclick="openEnquiry('Data Science & AI')">
+                                <i class="fas fa-arrow-right"></i> Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Python & Django -->
+            <div class="col-md-6 col-lg-4 course-item visible" data-category="it" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="course-card">
+                    <div class="course-card-top">
+                        <span class="course-cat-badge cat-it"><i class="fas fa-python"></i> IT & Development</span>
+                        <div class="course-icon-wrap icon-it"><i class="fab fa-python"></i></div>
+                        <h4 class="course-name">Python Programming & Django</h4>
+                        <p class="course-desc">From Python fundamentals to building full web applications with Django framework. Includes data manipulation and automation scripting.</p>
+                        <div class="course-meta-row">
+                            <span class="course-meta-item"><i class="fas fa-clock"></i> 4 Months</span>
+                            <span class="course-meta-item"><i class="fas fa-code-branch"></i> Backend Focus</span>
+                            <span class="course-meta-item"><i class="fas fa-project-diagram"></i> Live Projects</span>
+                        </div>
+                        <ul class="course-features">
+                            <li>Core Python & OOP Concepts</li>
+                            <li>File Handling & Libraries</li>
+                            <li>Django Framework (Full)</li>
+                            <li>REST API Development</li>
+                            <li>Database Integration</li>
+                            <li>Deployment on Cloud</li>
+                        </ul>
+                    </div>
+                    <div class="course-card-bottom">
+                        <div class="price-row">
+                            <div class="price-tag">
+                                <span class="price-label">Course Fee</span>
+                                <span class="price-amount">₹15,000</span>
+                                <span class="price-period">/ full program</span>
+                            </div>
+                            <button class="btn-secondary-custom course-enroll-btn" onclick="openEnquiry('Python & Django')">
+                                <i class="fas fa-arrow-right"></i> Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Java -->
+            <div class="col-md-6 col-lg-4 course-item visible" data-category="it" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div class="course-card">
+                    <div class="course-card-top">
+                        <span class="course-cat-badge cat-it"><i class="fab fa-java"></i> IT & Development</span>
+                        <div class="course-icon-wrap icon-it"><i class="fab fa-java"></i></div>
+                        <h4 class="course-name">Advanced Java Programming</h4>
+                        <p class="course-desc">Enterprise-grade Java development covering Core Java to Advanced J2EE concepts. Build robust applications for corporate environments.</p>
+                        <div class="course-meta-row">
+                            <span class="course-meta-item"><i class="fas fa-clock"></i> 5 Months</span>
+                            <span class="course-meta-item"><i class="fas fa-server"></i> Enterprise Level</span>
+                            <span class="course-meta-item"><i class="fas fa-briefcase"></i> Job Ready</span>
+                        </div>
+                        <ul class="course-features">
+                            <li>Core Java & OOP Mastery</li>
+                            <li>Collections & Generics</li>
+                            <li>JDBC & Database Access</li>
+                            <li>Servlets & JSP</li>
+                            <li>Spring Framework Intro</li>
+                            <li>Mini Application Project</li>
+                        </ul>
+                    </div>
+                    <div class="course-card-bottom">
+                        <div class="price-row">
+                            <div class="price-tag">
+                                <span class="price-label">Course Fee</span>
+                                <span class="price-amount">₹16,000</span>
+                                <span class="price-period">/ full program</span>
+                            </div>
+                            <button class="btn-secondary-custom course-enroll-btn" onclick="openEnquiry('Advanced Java')">
+                                <i class="fas fa-arrow-right"></i> Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tally Prime with GST -->
+            <div class="col-md-6 col-lg-4 course-item visible" data-category="accounting" data-aos="fade-up" data-aos-duration="600">
+                <div class="course-card">
+                    <div class="course-card-top">
+                        <span class="course-cat-badge cat-accounting"><i class="fas fa-rupee-sign"></i> Accounting & Professional</span>
+                        <div class="course-icon-wrap icon-accounting"><i class="fas fa-calculator"></i></div>
+                        <h4 class="course-name">Tally Prime with GST</h4>
+                        <p class="course-desc">Industry's most in-demand accounting software mastery. Complete Tally Prime training including GST filing, payroll & advanced reporting.</p>
+                        <div class="course-meta-row">
+                            <span class="course-meta-item"><i class="fas fa-clock"></i> 3 Months</span>
+                            <span class="course-meta-item"><i class="fas fa-building"></i> Business Ready</span>
+                            <span class="course-meta-item"><i class="fas fa-file-invoice"></i> GST Included</span>
+                        </div>
+                        <ul class="course-features">
+                            <li>Tally Prime Complete Training</li>
+                            <li>GST Returns & Filing</li>
+                            <li>Payroll Management</li>
+                            <li>Bank Reconciliation</li>
+                            <li>Advanced Inventory Management</li>
+                            <li>Job Placement Assistance</li>
+                        </ul>
+                    </div>
+                    <div class="course-card-bottom">
+                        <div class="price-row">
+                            <div class="price-tag">
+                                <span class="price-label">Course Fee</span>
+                                <span class="price-amount">₹8,500</span>
+                                <span class="price-period">/ full program</span>
+                            </div>
+                            <button class="btn-primary-custom course-enroll-btn" onclick="openEnquiry('Tally Prime with GST')">
+                                <i class="fas fa-arrow-right"></i> Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Excel -->
+            <div class="col-md-6 col-lg-4 course-item visible" data-category="accounting" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="course-card">
+                    <div class="course-card-top">
+                        <span class="course-cat-badge cat-accounting"><i class="fas fa-table"></i> Accounting & Professional</span>
+                        <div class="course-icon-wrap icon-accounting"><i class="fas fa-file-excel"></i></div>
+                        <h4 class="course-name">Advanced Excel & MIS Reporting</h4>
+                        <p class="course-desc">From basic spreadsheets to advanced formulas, pivot tables, VBA macros and dashboard creation. Essential for every office professional.</p>
+                        <div class="course-meta-row">
+                            <span class="course-meta-item"><i class="fas fa-clock"></i> 2 Months</span>
+                            <span class="course-meta-item"><i class="fas fa-chart-pie"></i> Dashboard Skills</span>
+                            <span class="course-meta-item"><i class="fas fa-code"></i> VBA Macros</span>
+                        </div>
+                        <ul class="course-features">
+                            <li>Advanced Formulas & Functions</li>
+                            <li>Pivot Tables & Charts</li>
+                            <li>VLOOKUP, INDEX-MATCH</li>
+                            <li>VBA Macro Automation</li>
+                            <li>MIS Report Building</li>
+                            <li>Dashboard Design</li>
+                        </ul>
+                    </div>
+                    <div class="course-card-bottom">
+                        <div class="price-row">
+                            <div class="price-tag">
+                                <span class="price-label">Course Fee</span>
+                                <span class="price-amount">₹5,500</span>
+                                <span class="price-period">/ full program</span>
+                            </div>
+                            <button class="btn-primary-custom course-enroll-btn" onclick="openEnquiry('Advanced Excel')">
+                                <i class="fas fa-arrow-right"></i> Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div class="col-md-6 col-lg-4 course-item visible" data-category="it" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div class="course-card">
+                    <div class="course-card-top">
+                        <span class="course-cat-badge cat-it"><i class="fas fa-bullhorn"></i> IT & Development</span>
+                        <div class="course-icon-wrap icon-it"><i class="fas fa-bullhorn"></i></div>
+                        <h4 class="course-name">Digital Marketing Professional</h4>
+                        <p class="course-desc">Master SEO, Social Media Marketing, Google Ads, Content Strategy & Analytics. Build your brand or launch a freelance career.</p>
+                        <div class="course-meta-row">
+                            <span class="course-meta-item"><i class="fas fa-clock"></i> 3 Months</span>
+                            <span class="course-meta-item"><i class="fas fa-globe"></i> Live Campaigns</span>
+                            <span class="course-meta-item"><i class="fas fa-award"></i> Certification</span>
+                        </div>
+                        <ul class="course-features">
+                            <li>SEO & Search Engine Marketing</li>
+                            <li>Social Media Management</li>
+                            <li>Google & Meta Ads</li>
+                            <li>Email Marketing & Automation</li>
+                            <li>Content Writing & Strategy</li>
+                            <li>Analytics & Performance Reports</li>
+                        </ul>
+                    </div>
+                    <div class="course-card-bottom">
+                        <div class="price-row">
+                            <div class="price-tag">
+                                <span class="price-label">Course Fee</span>
+                                <span class="price-amount">₹12,000</span>
+                                <span class="price-period">/ full program</span>
+                            </div>
+                            <button class="btn-secondary-custom course-enroll-btn" onclick="openEnquiry('Digital Marketing')">
+                                <i class="fas fa-arrow-right"></i> Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Graphic Designing -->
+            <div class="col-md-6 col-lg-4 course-item visible" data-category="creative" data-aos="fade-up" data-aos-duration="600">
+                <div class="course-card">
+                    <div class="course-card-top">
+                        <span class="course-cat-badge cat-creative"><i class="fas fa-palette"></i> Creative Arts</span>
+                        <div class="course-icon-wrap icon-creative"><i class="fas fa-pen-nib"></i></div>
+                        <h4 class="course-name">Graphic Designing</h4>
+                        <p class="course-desc">Professional graphic design mastery with Adobe Photoshop, Illustrator & CorelDRAW. Build a portfolio to land freelance or agency jobs.</p>
+                        <div class="course-meta-row">
+                            <span class="course-meta-item"><i class="fas fa-clock"></i> 4 Months</span>
+                            <span class="course-meta-item"><i class="fas fa-palette"></i> Portfolio Based</span>
+                            <span class="course-meta-item"><i class="fas fa-briefcase"></i> Freelance Ready</span>
+                        </div>
+                        <ul class="course-features">
+                            <li>Adobe Photoshop (Complete)</li>
+                            <li>Adobe Illustrator</li>
+                            <li>CorelDRAW Mastery</li>
+                            <li>Print & Digital Design</li>
+                            <li>Logo & Branding Projects</li>
+                            <li>Portfolio Development</li>
+                        </ul>
+                    </div>
+                    <div class="course-card-bottom">
+                        <div class="price-row">
+                            <div class="price-tag">
+                                <span class="price-label">Course Fee</span>
+                                <span class="price-amount">₹10,000</span>
+                                <span class="price-period">/ full program</span>
+                            </div>
+                            <button class="btn-gold-custom course-enroll-btn" onclick="openEnquiry('Graphic Designing')">
+                                <i class="fas fa-arrow-right"></i> Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fashion Designing -->
+            <div class="col-md-6 col-lg-4 course-item visible" data-category="creative" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="course-card">
+                    <div class="course-card-top">
+                        <span class="course-cat-badge cat-creative"><i class="fas fa-shirt"></i> Creative Arts</span>
+                        <div class="course-icon-wrap icon-creative"><i class="fas fa-scissors"></i></div>
+                        <h4 class="course-name">Fashion Designing</h4>
+                        <p class="course-desc">Unleash your creative potential with professional fashion design training. From sketching to garment construction and fashion illustration.</p>
+                        <div class="course-meta-row">
+                            <span class="course-meta-item"><i class="fas fa-clock"></i> 6 Months</span>
+                            <span class="course-meta-item"><i class="fas fa-star"></i> Creative Track</span>
+                            <span class="course-meta-item"><i class="fas fa-briefcase"></i> Industry Links</span>
+                        </div>
+                        <ul class="course-features">
+                            <li>Fashion Illustration & Sketching</li>
+                            <li>Garment Construction</li>
+                            <li>Textile Knowledge</li>
+                            <li>Pattern Making & Draping</li>
+                            <li>Computer-Aided Design (CAD)</li>
+                            <li>Fashion Portfolio Building</li>
+                        </ul>
+                    </div>
+                    <div class="course-card-bottom">
+                        <div class="price-row">
+                            <div class="price-tag">
+                                <span class="price-label">Course Fee</span>
+                                <span class="price-amount">₹14,000</span>
+                                <span class="price-period">/ full program</span>
+                            </div>
+                            <button class="btn-gold-custom course-enroll-btn" onclick="openEnquiry('Fashion Designing')">
+                                <i class="fas fa-arrow-right"></i> Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stenography -->
+            <div class="col-md-6 col-lg-4 course-item visible" data-category="accounting" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div class="course-card">
+                    <div class="course-card-top">
+                        <span class="course-cat-badge cat-accounting"><i class="fas fa-keyboard"></i> Professional Skills</span>
+                        <div class="course-icon-wrap icon-accounting"><i class="fas fa-keyboard"></i></div>
+                        <h4 class="course-name">Stenography & Shorthand</h4>
+                        <p class="course-desc">Master shorthand writing and typing skills for government secretarial positions. Highly demanded for court, SSC, and departmental exams.</p>
+                        <div class="course-meta-row">
+                            <span class="course-meta-item"><i class="fas fa-clock"></i> 6 Months</span>
+                            <span class="course-meta-item"><i class="fas fa-landmark"></i> Govt. Job Focus</span>
+                            <span class="course-meta-item"><i class="fas fa-tachometer-alt"></i> Speed Building</span>
+                        </div>
+                        <ul class="course-features">
+                            <li>Pitman Shorthand System</li>
+                            <li>Hindi & English Stenography</li>
+                            <li>Typing Speed Development</li>
+                            <li>Transcription Skills</li>
+                            <li>SSC / Secretarial Exam Prep</li>
+                            <li>Govt. Job Application Support</li>
+                        </ul>
+                    </div>
+                    <div class="course-card-bottom">
+                        <div class="price-row">
+                            <div class="price-tag">
+                                <span class="price-label">Course Fee</span>
+                                <span class="price-amount">₹9,000</span>
+                                <span class="price-period">/ full program</span>
+                            </div>
+                            <button class="btn-primary-custom course-enroll-btn" onclick="openEnquiry('Stenography')">
+                                <i class="fas fa-arrow-right"></i> Enroll Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- No Results Message -->
+        <div id="no-courses-msg" class="text-center py-5" style="display: none;">
+            <div style="font-size: 3rem; margin-bottom: 16px; opacity: 0.3;">📚</div>
+            <h5 style="color: var(--text-muted);">No courses found in this category yet.</h5>
+            <p style="color: var(--text-light); font-size: 0.88rem;">Please select "All Courses" or contact us for personalized recommendations.</p>
+        </div>
+
+        <!-- Browse All CTA -->
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-duration="500">
+            <p style="color: var(--text-muted); margin-bottom: 16px; font-size: 0.9rem;">Showing highlighted programs. We offer 500+ skill tracks total.</p>
+            <a href="tel:+919354090002" class="btn-primary-custom">
+                <i class="fas fa-phone-alt"></i> Call for Full Course List: +91 93540 90002
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     FACILITIES SECTION
+============================================ -->
+<section id="facilities">
+    <div class="container">
+        <div class="facilities-header" data-aos="fade-up" data-aos-duration="600">
+            <span class="section-label">Our Infrastructure</span>
+            <h2 class="section-title">World-Class <span style="color: var(--secondary);">Learning Facilities</span></h2>
+            <div class="divider-line mx-auto"></div>
+            <p class="section-subtitle mx-auto text-center">Every student deserves an environment that maximizes learning. Here's what makes INT different.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
+                <div class="facility-card">
+                    <div class="facility-icon fac-blue"><i class="fas fa-network-wired"></i></div>
+                    <h5 class="facility-title">Internet-Enabled Computer Labs</h5>
+                    <p class="facility-desc">Modern, high-speed internet connected lab systems giving every student dedicated screen time. All machines run the latest software environments used in industry.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="facility-card">
+                    <div class="facility-icon fac-cyan"><i class="fas fa-users-between-lines"></i></div>
+                    <h5 class="facility-title">Small Batch Sizes</h5>
+                    <p class="facility-desc">We deliberately keep batch sizes small to ensure every student receives personal attention from instructors. No crowded classrooms — just focused, personalized learning.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div class="facility-card">
+                    <div class="facility-icon fac-gold"><i class="fas fa-clipboard-check"></i></div>
+                    <h5 class="facility-title">Exam-Oriented Practice Sessions</h5>
+                    <p class="facility-desc">Dedicated mock test sessions, timed practice exams and previous year question reviews aligned with NIELIT, SSC and government recruitment exam patterns.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
+                <div class="facility-card">
+                    <div class="facility-icon fac-green"><i class="fas fa-handshake"></i></div>
+                    <h5 class="facility-title">Free Placement Counseling</h5>
+                    <p class="facility-desc">Our dedicated placement cell connects students with employer partners, guides resume building, mock interview preparation and provides ongoing job search support.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="facility-card">
+                    <div class="facility-icon fac-purple"><i class="fas fa-chalkboard-user"></i></div>
+                    <h5 class="facility-title">Expert Industry Instructors</h5>
+                    <p class="facility-desc">Learn from instructors with 10+ years of industry and academic experience. Real-world case studies, live project walkthroughs and practical mentorship included.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div class="facility-card">
+                    <div class="facility-icon fac-red"><i class="fas fa-calendar-alt"></i></div>
+                    <h5 class="facility-title">Flexible Batch Timings</h5>
+                    <p class="facility-desc">Morning, afternoon, evening and weekend batches available to accommodate working professionals, students and homemakers. Never miss a session that matters.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     WHY CHOOSE INT
+============================================ -->
+<section id="why-choose">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <!-- Visual Left Panel -->
+            <div class="col-lg-5" data-aos="fade-right" data-aos-duration="700">
+                <div class="why-visual-card">
+                    <div class="why-visual-content">
+                        <div class="why-visual-badge">
+                            <i class="fas fa-shield-halved"></i>
+                            Trusted Since 2007
+                        </div>
+                        <h3 class="why-visual-title">22+ Years of Shaping Careers in Haryana</h3>
+                        <p class="why-visual-text">INT Computer Institute has been the most trusted name in computer education in Sonipat for over two decades. Our government-approved diplomas have helped thousands of students secure positions in Central & State Government departments.</p>
+                        <a href="tel:+919354090002" class="btn-outline-white">
+                            <i class="fas fa-phone-alt"></i> Talk to a Counselor
+                        </a>
+                        <div class="why-mini-stats">
+                            <div class="why-mini-stat">
+                                <span class="num">10K+</span>
+                                <span class="lbl">Alumni Network</span>
+                            </div>
+                            <div class="why-mini-stat">
+                                <span class="num">500+</span>
+                                <span class="lbl">Courses Offered</span>
+                            </div>
+                            <div class="why-mini-stat">
+                                <span class="num">4</span>
+                                <span class="lbl">Govt. Accreditations</span>
+                            </div>
+                            <div class="why-mini-stat">
+                                <span class="num">100%</span>
+                                <span class="lbl">Lab Assignments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reasons List -->
+            <div class="col-lg-7" data-aos="fade-left" data-aos-duration="700" data-aos-delay="100">
+                <span class="section-label">Why Choose INT</span>
+                <h2 class="section-title" style="margin-bottom: 32px;">What Makes INT <span style="color: var(--secondary);">Your Best Choice</span></h2>
+                <ul class="why-reasons-list">
+                    <li class="why-reason-item">
+                        <div class="reason-icon fac-blue"><i class="fas fa-landmark" style="color: var(--primary);"></i></div>
+                        <div class="reason-text">
+                            <h5>Government-Recognized Accreditation</h5>
+                            <p>NIELIT (Ministry of Electronics & IT, Govt. of India) and HKCL (Govt. of Haryana) affiliated institute. Diplomas valid for Central & State Govt. job applications.</p>
+                        </div>
+                    </li>
+                    <li class="why-reason-item">
+                        <div class="reason-icon fac-cyan"><i class="fas fa-laptop-code" style="color: var(--secondary);"></i></div>
+                        <div class="reason-text">
+                            <h5>100% Practical, Lab-Based Learning</h5>
+                            <p>Every session includes hands-on lab assignments. We believe in learning by doing — each concept is reinforced through real application on live systems.</p>
+                        </div>
+                    </li>
+                    <li class="why-reason-item">
+                        <div class="reason-icon fac-gold"><i class="fas fa-user-tie" style="color: var(--accent-gold);"></i></div>
+                        <div class="reason-text">
+                            <h5>Expert Instructors with Industry Experience</h5>
+                            <p>Our faculty combines 10+ years of industry expertise with a passion for teaching. They bring real-world insights into every lesson and project.</p>
+                        </div>
+                    </li>
+                    <li class="why-reason-item">
+                        <div class="reason-icon fac-green"><i class="fas fa-briefcase" style="color: #10B981;"></i></div>
+                        <div class="reason-text">
+                            <h5>Free Placement Assistance Program</h5>
+                            <p>Our dedicated placement cell actively coordinates with companies, prepares students for interviews and provides job referrals at no additional cost.</p>
+                        </div>
+                    </li>
+                    <li class="why-reason-item">
+                        <div class="reason-icon fac-purple"><i class="fas fa-certificate" style="color: #8B5CF6;"></i></div>
+                        <div class="reason-text">
+                            <h5>ISO 9001:2015 Quality Management Certified</h5>
+                            <p>Our quality management systems are internationally certified, ensuring consistent, high-quality education delivery across all programs and batches.</p>
+                        </div>
+                    </li>
+                    <li class="why-reason-item" style="border-bottom: none;">
+                        <div class="reason-icon fac-red"><i class="fas fa-tags" style="color: #EF4444;"></i></div>
+                        <div class="reason-text">
+                            <h5>Affordable Fees with Transparent Pricing</h5>
+                            <p>We believe quality education should be accessible. No hidden fees, no surprise charges. EMI options available for longer duration courses.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     TESTIMONIALS
+============================================ -->
+<section id="testimonials">
+    <div class="container">
+        <div class="testimonials-header" data-aos="fade-up" data-aos-duration="600">
+            <span class="section-label">Student Success Stories</span>
+            <h2 class="section-title">What Our <span style="color: var(--secondary);">Alumni Say</span></h2>
+            <div class="divider-line mx-auto"></div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I completed the NIELIT O Level course from INT Institute and cleared my government exam on the first attempt. The practical training here is absolutely top-notch. The instructors are patient and very knowledgeable."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #1E3A8A, #3B82F6);">RS</div>
+                        <div>
+                            <span class="author-name">Rahul Sharma</span>
+                            <span class="author-course">NIELIT O Level · SSC Jr. Assistant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"After finishing DCA from INT, I was able to secure a job in the district government office. The placement team helped me a lot with interview preparation. Small batch sizes really make a difference!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #D97706, #F59E0B);">PV</div>
+                        <div>
+                            <span class="author-name">Priya Verma</span>
+                            <span class="author-course">DCA Diploma · District Govt. Office</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"The Full-Stack Web Development course completely changed my career. I went from having no coding skills to building real websites and earning freelance income within 8 months. Best investment I've made!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #06B6D4, #0284C7);">AK</div>
+                        <div>
+                            <span class="author-name">Amit Kumar</span>
+                            <span class="author-course">Full-Stack Development · Freelancer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Tally Prime with GST training at INT is excellent. I now work as an accounts executive at a private firm. The trainer made even complex GST filing concepts very easy to understand with live examples."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #10B981, #065F46);">SG</div>
+                        <div>
+                            <span class="author-name">Sunita Gupta</span>
+                            <span class="author-course">Tally Prime · Accounts Executive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Python and Django training here gave me everything I needed to land my first tech job. The projects we built during training were actual portfolio pieces that impressed my employer. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #8B5CF6, #6D28D9);">MR</div>
+                        <div>
+                            <span class="author-name">Manish Rawat</span>
+                            <span class="author-course">Python/Django · Backend Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The Graphic Designing course transformed my hobby into a profession. INT's trainers helped me build a real portfolio and I now run my own design studio. The tools and techniques taught here are industry-standard."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #F43F5E, #BE123C);">NK</div>
+                        <div>
+                            <span class="author-name">Neha Kapoor</span>
+                            <span class="author-course">Graphic Design · Design Studio Owner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     CONTACT CTA
+============================================ -->
+<section id="contact-cta">
+    <div class="container">
+        <div class="cta-content" data-aos="fade-up" data-aos-duration="700">
+            <span class="section-label" style="color: var(--secondary);">Start Your Journey</span>
+            <h2 class="cta-title">Ready to Transform Your Career?<br>Get a <span style="background: linear-gradient(135deg, #06B6D4, #67E8F9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Free Demo Class Today</span></h2>
+            <p class="cta-subtitle">Join 10,000+ students who've accelerated their careers through INT Computer Institute. Book your free demo session now — no commitment required.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#hero" class="btn-gold-custom" style="padding: 14px 32px; font-size: 1rem;" onclick="document.getElementById('demo-form').scrollIntoView({behavior:'smooth'}); return false;">
+                    <i class="fas fa-calendar-check"></i> Book Free Demo Class
+                </a>
+                <a href="tel:+919354090002" class="btn-outline-white" style="padding: 14px 32px; font-size: 1rem;">
+                    <i class="fas fa-phone-alt"></i> Call Us Now
+                </a>
+            </div>
+            <div class="cta-contact-cards">
+                <a href="tel:+919354090002" class="cta-contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="cta-contact-info">
+                        <span class="cta-contact-label">Primary Phone</span>
+                        <span class="cta-contact-value">+91 93540 90002</span>
+                    </div>
+                </a>
+                <a href="tel:08048052796" class="cta-contact-card">
+                    <i class="fas fa-headset"></i>
+                    <div class="cta-contact-info">
+                        <span class="cta-contact-label">Alternate Phone</span>
+                        <span class="cta-contact-value">08048052796</span>
+                    </div>
+                </a>
+                <a href="mailto:info@intinstitute.com" class="cta-contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <div class="cta-contact-info">
+                        <span class="cta-contact-label">Email Us</span>
+                        <span class="cta-contact-value">info@intinstitute.com</span>
+                    </div>
+                </a>
+                <a href="https://maps.google.com/?q=VijayRaj+Complex+Subhash+Chowk+Sonipat+Haryana" target="_blank" class="cta-contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="cta-contact-info">
+                        <span class="cta-contact-label">Visit Us</span>
+                        <span class="cta-contact-value">Subhash Chowk, Sonipat</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+============================================ -->
+<footer id="footer">
+    <div class="container">
+        <div class="row g-5">
+            <!-- About Column -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600">
+                <div class="footer-brand">
+                    <div class="d-flex align-items-center gap-3 mb-12">
+                        <div class="brand-logo-icon" style="width:40px;height:40px;font-size:1rem;">INT</div>
+                        <div>
+                            <span class="footer-brand-name">INT Computer Institute</span>
+                            <span class="footer-brand-tagline">Established 2007 · Sonipat, Haryana</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer-about-text">
+                    INT Computer Institute is Sonipat's most trusted government-approved computer education center. NIELIT & HKCL affiliated, ISO 9001:2015 certified, with 22+ years of transforming students into skilled professionals.
+                </p>
+                <div class="footer-accred-chips">
+                    <span class="accred-chip">NIELIT</span>
+                    <span class="accred-chip">HKCL</span>
+                    <span class="accred-chip">MSME</span>
+                    <span class="accred-chip">ISO 9001:2015</span>
+                    <span class="accred-chip">Govt. Approved</span>
+                </div>
+                <div class="footer-social-row">
+                    <a href="#" class="social-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/919354090002" class="social-btn" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Courses Column -->
+            <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <h6 class="footer-heading">Quick Courses</h6>
+                <ul class="footer-links">
+                    <li><a href="#course-catalog"><i class="fas fa-chevron-right"></i> NIELIT O Level</a></li>
+                    <li><a href="#course-catalog"><i class="fas fa-chevron-right"></i> DCA Diploma</a></li>
+                    <li><a href="#course-catalog"><i class="fas fa-chevron-right"></i> Full-Stack Web Dev</a></li>
+                    <li><a href="#course-catalog"><i class="fas fa-chevron-right"></i> Data Science & AI</a></li>
+                    <li><a href="#course-catalog"><i class="fas fa-chevron-right"></i> Python & Django</a></li>
+                    <li><a href="#course-catalog"><i class="fas fa-chevron-right"></i> Advanced Java</a></li>
+                    <li><a href="#course-catalog"><i class="fas fa-chevron-right"></i> Tally with GST</a></li>
+                    <li><a href="#course-catalog"><i class="fas fa-chevron-right"></i> Digital Marketing</a></li>
+                    <li><a href="#course-catalog"><i class="fas fa-chevron-right"></i> Graphic Designing</a></li>
+                    <li><a href="#course-catalog"><i class="fas fa-chevron-right"></i> Stenography</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="col-lg-2 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+                <h6 class="footer-heading">Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="#hero"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#course-catalog"><i class="fas fa-chevron-right"></i> All Courses</a></li>
+                    <li><a href="#facilities"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+                    <li><a href="#why-choose"><i class="fas fa-chevron-right"></i> Why INT</a></li>
+                    <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Alumni Stories</a></li>
+                    <li><a href="#contact-cta"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    <li><a href="#demo-form"><i class="fas fa-chevron-right"></i> Free Demo</a></li>
+                    <li><a href="https://intinstitute.com" target="_blank"><i class="fas fa-chevron-right"></i> Official Website</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <h6 class="footer-heading">Visit Our Institute</h6>
+                <div class="footer-contact-item">
+                    <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="footer-contact-text">
+                        <strong>INT Computer Institute</strong><br>
+                        VijayRaj Complex, 1st Floor, Gate No. 2,<br>
+                        Opposite HDFC Bank, Indra Colony,<br>
+                        Subhash Chowk, Sonipat,<br>
+                        Haryana – 131001
+                    </div>
+                </div>
+                <div class="footer-contact-item">
+                    <div class="footer-contact-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="footer-contact-text">
+                        <strong>Primary:</strong> <a href="tel:+919354090002" style="color: var(--secondary);">+91 93540 90002</a><br>
+                        <strong>Alternate:</strong> <a href="tel:08048052796" style="color: var(--secondary);">08048052796</a>
+                    </div>
+                </div>
+                <div class="footer-contact-item">
+                    <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="footer-contact-text">
+                        <a href="mailto:info@intinstitute.com" style="color: var(--secondary);">info@intinstitute.com</a>
+                    </div>
+                </div>
+                <div class="footer-contact-item">
+                    <div class="footer-contact-icon"><i class="fas fa-clock"></i></div>
+                    <div class="footer-contact-text">
+                        <strong>Office Hours:</strong><br>
+                        Monday – Saturday: 9:00 AM – 7:00 PM<br>
+                        Sunday: By Appointment Only
+                    </div>
+                </div>
+                <div class="footer-contact-item">
+                    <div class="footer-contact-icon"><i class="fas fa-globe"></i></div>
+                    <div class="footer-contact-text">
+                        <a href="https://intinstitute.com" target="_blank" style="color: var(--secondary);">www.intinstitute.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <p class="footer-bottom-text mb-0">
+                        &copy; 2024 INT Computer Institute, Sonipat, Haryana. All Rights Reserved.<br>
+                        <span style="font-size:0.72rem;">NIELIT Affiliated · HKCL Certified · MSME Registered · ISO 9001:2015 Certified</span>
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Admission Policy</a>
+                        <a href="https://intinstitute.com" target="_blank">Official Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button id="scroll-top" title="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- ============================================
+     JAVASCRIPT LIBRARIES
+============================================ -->
+<!-- Bootstrap 5.3 Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    /* ============================================
+       INITIALIZE AOS
+    ============================================ */
+    AOS.init({
+        once: true,
+        offset: 60,
+        easing: 'ease-out-cubic'
+    });
+
+    /* ============================================
+       NAVBAR SCROLL EFFECT
+    ============================================ */
+    (function () {
+        var navbar = document.getElementById('main-navbar');
+        var navLinks = document.querySelectorAll('#main-navbar .nav-link');
+        var sections = document.querySelectorAll('section[id]');
+
+        function onScroll() {
+            var scrollY = window.pageYOffset;
+
+            // Add scrolled class
+            if (scrollY > 60) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Show / hide scroll top button
+            var scrollBtn = document.getElementById('scroll-top');
+            if (scrollY > 400) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+
+            // Active nav link based on section
+            var currentSection = '';
+            sections.forEach(function (section) {
+                var sectionTop = section.offsetTop - 120;
+                var sectionHeight = section.offsetHeight;
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(function (link) {
+                link.classList.remove('active');
+                var href = link.getAttribute('href');
+                if (href && href === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+
+    /* ============================================
+       ANIMATED COUNTERS
+    ============================================ */
+    (function () {
+        var counters = document.querySelectorAll('.metric-number[data-target]');
+        var observed = false;
+
+        function formatNumber(num, target) {
+            if (target >= 1000) {
+                return (num / 1000).toFixed(num % 1000 === 0 ? 0 : 0) + 'K';
+            }
+            return num.toString();
+        }
+
+        function animateCounter(el) {
+            var target = parseInt(el.getAttribute('data-target'));
+            var suffix = el.getAttribute('data-suffix') || '';
+            var duration = 2000;
+            var stepTime = 20;
+            var totalSteps = duration / stepTime;
+            var currentStep = 0;
+
+            var timer = setInterval(function () {
+                currentStep++;
+                var progress = currentStep / totalSteps;
+                var eased = 1 - Math.pow(1 - progress, 3);
+                var current = Math.round(eased * target);
+
+                if (target >= 1000) {
+                    el.textContent = formatNumber(current, target) + suffix;
+                } else {
+                    el.textContent = current + suffix;
+                }
+
+                if (currentStep >= totalSteps) {
+                    clearInterval(timer);
+                    if (target >= 1000) {
+                        el.textContent = formatNumber(target, target) + suffix;
+                    } else {
+                        el.textContent = target + suffix;
+                    }
+                }
+            }, stepTime);
+        }
+
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting && !observed) {
+                    counters.forEach(animateCounter);
+                    observed = true;
+                    observer.disconnect();
+                }
+            });
+        }, { threshold: 0.3 });
+
+        var metricsSection = document.getElementById('trust-metrics');
+        if (metricsSection) {
+            observer.observe(metricsSection);
+        }
+    })();
+
+    /* ============================================
+       COURSE CATALOG FILTER
+    ============================================ */
+    (function () {
+        var filterBtns = document.querySelectorAll('.filter-tab-btn');
+        var courseItems = document.querySelectorAll('.course-item');
+        var noCoursesMsg = document.getElementById('no-courses-msg');
+
+        filterBtns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                // Update active button
+                filterBtns.forEach(function (b) { b.classList.remove('active'); });
+                btn.classList.add('active');
+
+                var filter = btn.getAttribute('data-filter');
+                var visibleCount = 0;
+
+                courseItems.forEach(function (item) {
+                    var category = item.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        item.classList.add('visible');
+                        item.style.display = 'flex';
+                        visibleCount++;
+                    } else {
+                        item.classList.remove('visible');
+                        item.style.display = 'none';
+                    }
+                });
+
+                if (noCoursesMsg) {
+                    noCoursesMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+                }
+
+                // Re-trigger AOS for newly visible items
+                AOS.refresh();
+            });
+        });
+    })();
+
+    /* ============================================
+       LEAD FORM SUBMISSION
+    ============================================ */
+    (function () {
+        var form = document.getElementById('lead-form');
+        if (!form) return;
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Basic validation
+            var name = document.getElementById('f-name').value.trim();
+            var phone = document.getElementById('f-phone').value.trim();
+            var course = document.getElementById('f-course').value;
+
+            var errors = [];
+
+            if (!name || name.length < 2) {
+                errors.push('Please enter your full name.');
+            }
+
+            var phoneRegex = /^[6-9][0-9]{9}$/;
+            if (!phone || !phoneRegex.test(phone)) {
+                errors.push('Please enter a valid 10-digit Indian mobile number.');
+            }
+
+            if (!course) {
+                errors.push('Please select a course interest.');
+            }
+
+            if (errors.length > 0) {
+                alert('Please fix the following:\n• ' + errors.join('\n• '));
+                return;
+            }
+
+            // Simulate form submission (in real scenario, this would be an API call)
+            var submitBtn = form.querySelector('[type="submit"]');
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+            submitBtn.disabled = true;
+
+            setTimeout(function () {
+                // Show success state
+                document.getElementById('form-content').style.display = 'none';
+                document.getElementById('form-success').classList.add('show');
+                // Reset form
+                form.reset();
+                submitBtn.innerHTML = '<i class="fas fa-calendar-check"></i> Book My Free Demo Class';
+                submitBtn.disabled = false;
+            }, 1500);
+        });
+    })();
+
+    /* ============================================
+       RESET FORM FUNCTION
+    ============================================ */
+    function resetForm() {
+        document.getElementById('form-content').style.display = 'block';
+        document.getElementById('form-success').classList.remove('show');
+        document.getElementById('lead-form').reset();
+    }
+
+    /* ============================================
+       ENROLL / ENQUIRY FUNCTION
+    ============================================ */
+    function openEnquiry(courseName) {
+        // Scroll to demo form and pre-select course
+        var demoForm = document.getElementById('demo-form');
+        if (demoForm) {
+            demoForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Map course names to select values
+        var courseMap = {
+            'NIELIT O Level': 'nielit-o-level',
+            'DCA Diploma': 'dca',
+            'Full-Stack Web Development': 'web-dev',
+            'Data Science & AI': 'data-science',
+            'Python & Django': 'python',
+            'Advanced Java': 'java',
+            'Tally Prime with GST': 'tally',
+            'Advanced Excel': 'excel',
+            'Digital Marketing': 'digital-marketing',
+            'Graphic Designing': 'graphic-design',
+            'Fashion Designing': 'fashion-design',
+            'Stenography': 'other'
+        };
+
+        setTimeout(function () {
+            var courseSelect = document.getElementById('f-course');
+            if (courseSelect && courseMap[courseName]) {
+                courseSelect.value = courseMap[courseName];
+            }
+            // Focus on name field
+            var nameField = document.getElementById('f-name');
+            if (nameField) { nameField.focus(); }
+        }, 700);
+    }
+
+    /* ============================================
+       SMOOTH NAV LINK SCROLLING
+    ============================================ */
+    (function () {
+        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        navLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                var href = link.getAttribute('href');
+                if (href && href.startsWith('#') && href.length > 1) {
+                    e.preventDefault();
+                    var target = document.querySelector(href);
+                    if (target) {
+                        var navbarHeight = document.getElementById('main-navbar').offsetHeight;
+                        var targetPosition = target.offsetTop - navbarHeight - 20;
+                        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+
+                        // Close mobile menu
+                        var navbarCollapse = document.getElementById('navbarMenu');
+                        if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                            var bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                            if (bsCollapse) { bsCollapse.hide(); }
+                        }
+                    }
+                }
+            });
+        });
+    })();
+
+    /* ============================================
+       CARD HOVER PARALLAX (SUBTLE)
+    ============================================ */
+    (function () {
+        var cards = document.querySelectorAll('.facility-card, .course-card');
+        cards.forEach(function (card) {
+            card.addEventListener('mousemove', function (e) {
+                var rect = card.getBoundingClientRect();
+                var x = e.clientX - rect.left;
+                var y = e.clientY - rect.top;
+                var centerX = rect.width / 2;
+                var centerY = rect.height / 2;
+                var rotateX = ((y - centerY) / centerY) * 2;
+                var rotateY = ((x - centerX) / centerX) * -2;
+                card.style.transform = 'translateY(-6px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)';
+            });
+            card.addEventListener('mouseleave', function () {
+                card.style.transform = '';
+            });
+        });
+    })();
+
+    /* ============================================
+       YEAR AUTO-UPDATE IN COPYRIGHT
+    ============================================ */
+    (function () {
+        var currentYear = new Date().getFullYear();
+        var copyrightTexts = document.querySelectorAll('.footer-bottom-text');
+        copyrightTexts.forEach(function (el) {
+            el.innerHTML = el.innerHTML.replace('2024', currentYear);
+        });
+    })();
+</script>
+
+</body>
+</html>
